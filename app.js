@@ -137,35 +137,35 @@ botonBuscar.addEventListener("click", () => {
 
                     switch (data2.weather[0].main) {
                         case 'Thunderstorm':
-                            iconoAnimado2.src = 'animated/thunder.svg'
+                            iconoAnimado2.src = '../animated/thunder.svg'
                             console.log('TORMENTA');
                             break;
                         case 'Drizzle':
-                            iconoAnimado2.src = 'animated/rainy-2.svg'
+                            iconoAnimado2.src = '../animated/rainy-2.svg'
                             console.log('LLOVIZNA');
                             break;
                         case 'Rain':
-                            iconoAnimado2.src = 'animated/rainy-7.svg'
+                            iconoAnimado2.src = '../animated/rainy-7.svg'
                             console.log('LLUVIA');
                             break;
                         case 'Snow':
-                            iconoAnimado2.src = 'animated/snowy-6.svg'
+                            iconoAnimado2.src = '../animated/snowy-6.svg'
                             console.log('NIEVE');
                             break;
                         case 'Clear':
-                            iconoAnimado2.src = 'animated/day.svg'
+                            iconoAnimado2.src = '../animated/day.svg'
                             console.log('LIMPIO');
                             break;
                         case 'Atmosphere':
-                            iconoAnimado2.src = 'animated/weather.svg'
+                            iconoAnimado2.src = '../animated/weather.svg'
                             console.log('ATMOSFERA');
                             break;
                         case 'Clouds':
-                            iconoAnimado2.src = 'animated/cloudy-day-1.svg'
+                            iconoAnimado2.src = '../animated/cloudy-day-1.svg'
                             console.log('NUBES');
                             break;
                         default:
-                            iconoAnimado2.src = 'animated/cloudy-day-1.svg'
+                            iconoAnimado2.src = '../animated/cloudy-day-1.svg'
                             console.log('por defecto');
                     }
 
