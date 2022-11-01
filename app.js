@@ -137,7 +137,7 @@ botonBuscar.addEventListener("click", () => {
 
                     switch (data2.weather[0].main) {
                         case 'Thunderstorm':
-                            iconoAnimado2.src = './animated/thunder.svg'
+                            iconoAnimado2.src = 'animated/thunder.svg'
                             console.log('TORMENTA');
                             break;
                         case 'Drizzle':
@@ -153,7 +153,7 @@ botonBuscar.addEventListener("click", () => {
                             console.log('NIEVE');
                             break;
                         case 'Clear':
-                            iconoAnimado2.src = './animated/day.svg'
+                            iconoAnimado2.src = 'animated/day.svg'
                             console.log('LIMPIO');
                             break;
                         case 'Atmosphere':
