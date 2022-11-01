@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../main.css">
+    <title>ESTRELLA IMPORTACION</title>
+</head>
+
+<body>
+    <section class="sec">
+        <header class="newHeader">
+            <a href="#"><img src="../img/samsung_logo.png" class="logoSamsung" alt="logo_samsung"></a>
+            <ul class="navbarSamsung">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/samsung.html">Samsung</a></li>
+                <li><a href="../paginas/apple.html">Apple</a></li>
+                <li><a href="../paginas/google.html">Google</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Disfruta la Tecnologia <br><span>Samsung</span></h2>
+                <p>Samsung es la marca lider de telefonos celulares en el mundo y esto por una simple razon, por la gran
+                    calidad de sus productos. Algunas de las ventajas que te ofrece son: Versatilidad en tamaño, peso,
+                    caracteristicas y en calidad.</p>
+                <a target="_blank"
+                    href="https://shop.samsung.com/ar/dispositivos-moviles/smartphones?utm_source=samsung&utm_medium=brand&utm_campaign=gnb">Ver
+                    Productos Samsung</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="../img/celular1.png" class="celular1" alt="telefono1">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="../img/celular1.png" onclick="imgSlider('../img/celular1.png');changeBgColor('#01284d')"></li>
+            <li><img src="../img/celular2.png" onclick="imgSlider('../img/celular2.png');changeBgColor('black')"
+                    alt="telefono x"></li>
+            <li><img src="../img/celular3.png" onclick="imgSlider('../img/celular3.png');changeBgColor('#b30539')"
+                    alt="telefono x"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="../img/facebook.png" alt="facebook_logo"></a></li>
+            <li><a href="#"><img src="../img/twitter.png" alt="twitter_logo"></a></li>
+            <li><a href="#"><img src="../img/instagram.png" alt="instagram_logo"></a></li>
+        </ul>
+
+    </section>
+
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.celular1').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>

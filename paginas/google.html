@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../main.css">
+    <title>ESTRELLA IMPORTACION</title>
+</head>
+
+<body>
+    <section class="sec_google" >
+        <header class="newHeader">
+            <a href="#"><img src="../img/Google_G_Logo.png" class="logoGoogle" alt="logo_Google"></a>
+            <ul class="navbarGoogle">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/samsung.html">Samsung</a></li>
+                <li><a href="../paginas/apple.html">Apple</a></li>
+                <li><a href="../paginas/google.html">Google</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+
+        <div class="content_google">
+            <div class="textBox">
+                <h2>Life By <span>You</span>, Phone By <span>Google</span></h2>
+
+                <a target="_blank"
+                    href="https://store.google.com/es/category/phones?pli=1&hl=es">Ver Productos Pixel</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="../img/Pixel_6.jpg" class="celular1" alt="telefono1">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="../img/Pixel_6.jpg" onclick="imgSlider('../img/Pixel_6.jpg');changeBgColor('#01284d')"></li>
+            <li><img src="../img/Pixel_4.jpg" onclick="imgSlider('../img/Pixel_4.jpg');changeBgColor('black')"
+                    alt="telefono x"></li>
+            <li><img src="../img/Pixel_·.jpg" onclick="imgSlider('../img/Pixel_·.jpg');changeBgColor('#b30539')"
+                    alt="telefono x"></li>
+        </ul>
+
+        <ul class="sci_google">
+            <li><a href="#"><img src="../img/facebook.png" alt="facebook_logo"></a></li>
+            <li><a href="#"><img src="../img/twitter.png" alt="twitter_logo"></a></li>
+            <li><a href="#"><img src="../img/instagram.png" alt="instagram_logo"></a></li>
+        </ul>
+
+    </section>
+
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.celular1').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
